@@ -30,6 +30,20 @@
 <?php 
     include("PHP/connect.php");
     session_start();
+
+    $email = $_SESSION['nome'];
+
+    $sql = "SELECT * FROM User where email = '$email'";
+	try {
+		$consulta = $link->prepare($sql);
+		$consulta->execute();
+		while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
+            $avatar = $registro['avatar'];
+		}
+	}
+	catch(PDOException $ex){
+		echo($ex->getMessage());
+	}
 ?>
 
 <body>
@@ -37,7 +51,7 @@
     <aside>
         <div class="container">
             <div class="containerAvatar">
-                <div class="avatar"><!-- Trazer avatar do banco --></div>
+            <div class="avatar" style="background-image: url('<?php echo($avatar) ?>'); background-position: center; background-size: cover"></div>
             </div> 
             <div class="containerMenu">
             <div class="btnMenu">

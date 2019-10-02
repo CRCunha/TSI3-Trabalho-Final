@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 02-Out-2019 às 14:01
+-- Tempo de geração: 02-Out-2019 às 15:05
 -- Versão do servidor: 10.4.6-MariaDB
 -- versão do PHP: 7.1.31
 
@@ -67,16 +67,17 @@ CREATE TABLE `User` (
   `id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `senha` varchar(255) NOT NULL,
-  `nome` varchar(255) NOT NULL
+  `nome` varchar(255) NOT NULL,
+  `avatar` varchar(1000) NOT NULL DEFAULT 'https://colegioclassea.com.br/wp-content/themes/PageLand/assets/img/avatar/avatar.jpg'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `User`
 --
 
-INSERT INTO `User` (`id`, `email`, `senha`, `nome`) VALUES
-(3, 'teste@teste.com', '6ba19813d8fe1145922b11ba580e477f6ea0dfb7', 'Teste'),
-(4, 'contato@cristiancunha.me', '6ba19813d8fe1145922b11ba580e477f6ea0dfb7', 'Cristian');
+INSERT INTO `User` (`id`, `email`, `senha`, `nome`, `avatar`) VALUES
+(3, 'teste@teste.com', '6ba19813d8fe1145922b11ba580e477f6ea0dfb7', 'Teste', 'https://colegioclassea.com.br/wp-content/themes/PageLand/assets/img/avatar/avatar.jpg'),
+(4, 'contato@cristiancunha.me', '6ba19813d8fe1145922b11ba580e477f6ea0dfb7', 'Cristian', 'https://i.imgur.com/4GEAmpO.jpg');
 
 --
 -- Índices para tabelas despejadas

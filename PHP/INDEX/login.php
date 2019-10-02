@@ -24,6 +24,8 @@
 		$consulta->execute();
 		while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
             $nome = ($registro['nome_user']);
+            $avatar = ($registro['avatar']);
+            $id = $registro['id'];
 		}
 	}
 	catch(PDOException $ex){
@@ -35,6 +37,5 @@
     $_SESSION['logged_in'] = true;
     $_SESSION['nome'] = $email;
 
-    echo($_SESSION['nome']);
     header('Location: ../../dashboard.php');
 ?>
