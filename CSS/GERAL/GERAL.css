@@ -1,0 +1,30 @@
+:root {
+    /* VARIAVEL EXEMPLO */
+    --flex: flex;
+    --center: center;
+    --flex-end: flex-end;
+    --flex-start: flex-start;
+    --space-evenly: space-evenly;
+    --space-around: space-around;
+    --space-between: space-between;
+    --wrap: wrap;
+    --nowrap: nowrap;
+    --colorFont: #878787;
+    --fontPadrao: 'Ubuntu', sans-serif;
+    --cover: cover;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F5F7;
+
+    display: var(--flex);
+    justify-content: var(--space-between);
+
+    font-family: var(--fontPadrao);
+}
+
+/* QUERY EXEMPLO */
+
+@media only screen and (max-width: 800px) {}

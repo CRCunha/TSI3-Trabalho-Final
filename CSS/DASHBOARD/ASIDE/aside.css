@@ -1,0 +1,99 @@
+aside{
+    width: 70px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(9,9,16,.15);
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+aside .container{
+    width: 100%;
+    height: 85%;
+    display: var(--flex);
+    justify-content: var(--space-between);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+}
+
+aside .container .containerAvatar{
+    width: 100%;
+    height: 80px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+aside .container .containerAvatar .avatar{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    box-shadow: 0 10px 20px 0 rgba(9,9,16,.15);
+    background-color: #fff;
+    background-image: url("IMG/avatar-icon.jpg");
+    background-position: var(--center);
+    background-size: var(--cover);
+}
+
+aside .container .containerMenu{
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+    transition: .5s;
+}
+
+aside .container .containerMenu .btnMenu{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 10px 20px 0 rgba(9, 9, 16, 0.048);
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    cursor: pointer;
+    transition: .5s;
+}
+aside .container .containerMenu .btnMenu:hover{
+    box-shadow: 0 10px 20px 0 rgba(9,9,16,.15);
+    transition: .5s;
+}
+
+aside .container .containerMenu .btnMenu img{
+    width: 30%;
+}
+
+aside .container .btnLogout{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 10px 20px 0 rgba(9, 9, 16, 0.048);
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+aside .container .btnLogout a{
+    width: 100%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    text-align: var(--center);
+}
+
+aside .container .btnLogout a img{
+    width: 30%;
+}
+
+aside .container .btnLogout:hover{
+    box-shadow: 0 10px 20px 0 rgba(9,9,16,.15);
+    transition: .5s;
+}

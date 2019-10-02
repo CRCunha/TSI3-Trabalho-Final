@@ -1,0 +1,33 @@
+.atividade{
+    width: 20%;
+    max-height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.atividade .container{
+    width: 93%;
+    height: 96%;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(9,9,16,.15);
+
+    border-radius: 5px;
+
+    overflow: auto;
+}
+
+.atividade .container::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	background-color: #F5F5F5;
+}
+
+.atividade .container::-webkit-scrollbar{
+	width: 6px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.atividade .container::-webkit-scrollbar-thumb{
+	background-color: #00000000;
+}

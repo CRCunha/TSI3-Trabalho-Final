@@ -1,0 +1,149 @@
+#index{
+    width: 100vw;
+    height: 100vh;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    background-image: url("../INDEX/IMG/background.jpg");
+    background-position: var(--center);
+    background-size: var(--cover);
+}
+
+.formularios{
+    border-radius: 8px;
+    width: 370px;
+    height: 450px;
+    box-shadow: 0 10px 20px 0 rgba(9, 9, 16, 0.048);
+    background-color: #fff;
+    border-bottom: solid 8px #FF0055;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--flex-start);
+    flex-wrap: var(--wrap);
+}
+
+.formularios .containerLogin{
+    width: 100%;
+    height: 80%;
+}
+
+.formularios .containerLogin .title{
+    width: 100%;
+    height: 30%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    color: #878787;
+    font-size: 16pt;
+    font-family: var(--fontPadrao);
+}
+
+.formularios .containerLogin form{
+    display: var(--flex);
+    justify-content: var(--space-around);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+
+    width: 100%;
+    height: 70%;
+}
+
+.formularios .containerLogin form input{
+    width: 70%;
+    border: none;
+    box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.08);
+    padding: 15px 20px;
+    border-radius: 50px;
+
+    font-size: 11pt;
+    text-align: center;
+    color: #878787;
+
+    outline: 0;
+}
+
+.formularios .containerLogin form input[type="submit"]{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.formularios .btnRegister{
+    width: 100%;
+    height: 10%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.formularios .btnRegister .container{
+    width: 60%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--flex-start);
+}
+
+.formularios .btnRegister .container .register{
+    color: #878787;
+    font-size: 11pt;
+    cursor: pointer;
+}
+
+
+
+
+
+.formularios .containerRegister{
+    width: 100%;
+    height: 80%;
+
+    display: none;
+}
+
+.formularios .containerRegister .title{
+    width: 100%;
+    height: 30%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    color: #878787;
+    font-size: 16pt;
+    font-family: var(--fontPadrao);
+}
+
+.formularios .containerRegister form{
+    display: var(--flex);
+    justify-content: var(--space-around);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+
+    width: 100%;
+    height: 70%;
+}
+
+.formularios .containerRegister form input{
+    width: 70%;
+    border: none;
+    box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.08);
+    padding: 15px 20px;
+    border-radius: 50px;
+
+    font-size: 11pt;
+    text-align: center;
+    color: #878787;
+
+    outline: 0;
+}
+
+.formularios .containerRegister form input[type="submit"]{
+    background-color: #fff;
+    cursor: pointer;
+}

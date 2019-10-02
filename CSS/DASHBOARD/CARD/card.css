@@ -1,0 +1,62 @@
+.card{
+    width: 285px;
+    height: 210px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(9, 9, 16, 0.048);
+    border-bottom: solid 5px #FF0055;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.card .cardContent{
+    width: 100%;
+    height: 80%;
+
+    color: rgb(129, 129, 129);
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.card .etiqueta{
+    width: 100%;
+    height: 20%;
+    display: var(--flex);
+    justify-content: var(--flex-end);
+}
+
+
+.card .etiqueta .etiquetaContent{
+    width: 50px;
+    height: 100%;
+    background-color: #FF0055;
+    border-top-left-radius: 5px;
+
+    color: #F4F5F7;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.cardAdd{
+    cursor: pointer;
+
+    width: 270px;
+    height: 210px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: rgba(9, 9, 16, 0.048) 3px dashed;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}

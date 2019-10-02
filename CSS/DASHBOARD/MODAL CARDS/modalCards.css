@@ -1,0 +1,44 @@
+.modalCards{
+    width: 100vw;
+    height: 100vh;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+
+    position: fixed;
+    display: none;
+}
+
+.modalCards form{
+    width: 285px;
+    height: 210px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(9, 9, 16, 0.048);
+    border-bottom: solid 5px #FF0055;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+}
+
+.modalCards form input[type="text"]{
+    width: 80%;
+    padding: 10px;  
+    background-color: transparent;
+    /* border-bottom: solid 1px rgba(9, 9, 16, 0.267); */
+    text-align: var(--center);
+    color: #878787;
+}
+
+.modalCards form input{
+    padding: 12px 35px;
+    border: none;
+    cursor: pointer;
+    background-color: #FF0055;;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(9, 9, 16, 0.048);
+}

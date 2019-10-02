@@ -1,0 +1,114 @@
+main{
+    width: 70%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+main .container{
+    width: 100%;
+    height: 90%;
+}
+
+main .container .mainHeader{
+    width: 100%;
+    height: 120px;
+
+    display: var(--flex);
+    justify-content: var(--space-between);
+    align-items: var(--center);
+    flex-wrap: var(--nowrap);
+
+    border-bottom: solid 1.3px rgba(0,0,0,0.08);
+
+    margin-bottom: 20px;
+}
+
+main .container .mainHeader .title{
+    width: 20%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    
+    color: var(--colorFont);
+    font-size: 16pt;
+}
+
+main .container .mainHeader .search{
+    width: 70%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--flex-end);
+    align-items: var(--center);
+}
+
+main .container .mainHeader .search .container{
+    width: 60%;
+    height: 35%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+main .container .mainHeader .search .container .icon{
+    width: 80px;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+main .container .mainHeader .search .container .icon img{
+    width: 22%;
+}
+
+main .container .mainHeader .search .container form{
+    width: 80%;
+    height: 100%;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+}
+
+main .container .mainHeader .search .container form input[type='text']{
+    width: 70%;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    outline: 0;
+
+    color: #787878;
+}
+
+main .container .content{
+    width: 100%;
+    height: 80%;
+
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    flex-wrap: var(--wrap);
+
+    overflow: auto;
+}
+
+main .container .content::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	background-color: #F5F5F5;
+}
+
+main .container .content::-webkit-scrollbar{
+	width: 6px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+main .container .content::-webkit-scrollbar-thumb{
+	background-color: #00000000;
+}
