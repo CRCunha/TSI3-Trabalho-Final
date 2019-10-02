@@ -40,7 +40,7 @@
                 <div class="avatar"><!-- Trazer avatar do banco --></div>
             </div> 
             <div class="containerMenu">
-                <div class="btnMenu">
+            <div class="btnMenu">
                     <a href="dashboard.php" style="widht: 100%; display: var(--flex);justify-content: var(--center);">
                         <img src="CSS/DASHBOARD/ASIDE/IMG/home.png" alt="home" />
                     </a>
@@ -85,7 +85,11 @@
                 </div>  
             </div>
             <div class="content" id="#style-3">
-                
+                <?php include("PHP/DASHBOARD/mostrarCards.php"); ?>
+                <!-- CARD ADD -->
+                <div class="cardAdd" onclick="abrirModalCard()">
+                    <img src="CSS/DASHBOARD/CARD/IMG/add.png">
+                </div>    
             </div>
         </div>
     </main>    

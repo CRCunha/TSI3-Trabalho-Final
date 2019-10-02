@@ -11,7 +11,7 @@ if(isset($_POST['enviar'])){
 		$consulta = $link->prepare($sql);
 	
 		$consulta->execute();
-		header("Location:../../dashboard.php");
+		header("Location:../../feed.php");
 	}
 	catch(PDOException $ex){
 		echo($ex->getMessage());

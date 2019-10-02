@@ -56,12 +56,13 @@ aside .container .containerMenu .btnMenu{
     cursor: pointer;
     transition: .5s;
 }
+
 aside .container .containerMenu .btnMenu:hover{
     box-shadow: 0 10px 20px 0 rgba(9,9,16,.15);
     transition: .5s;
 }
 
-aside .container .containerMenu .btnMenu img{
+aside .container .containerMenu .btnMenu a img{
     width: 30%;
 }
 
