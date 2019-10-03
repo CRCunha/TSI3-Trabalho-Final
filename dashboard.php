@@ -39,6 +39,7 @@
 		$consulta->execute();
 		while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
             $avatar = $registro['avatar'];
+            $_SESSION['avatar'] = $avatar;
 		}
 	}
 	catch(PDOException $ex){
@@ -65,12 +66,12 @@
                     </a>
                 </div> 
                 <div class="btnMenu">
-                    <a href="" style="  widht: 100%; display: var(--flex);justify-content: var(--center);">
+                    <a href="perfil.php" style="  widht: 100%; display: var(--flex);justify-content: var(--center);">
                         <img src="CSS/DASHBOARD/ASIDE/IMG/user.png" alt="user" />
                     </a>
                 </div> 
                 <div class="btnMenu">
-                    <a href="feed.php" style="  widht: 100%; display: var(--flex);justify-content: var(--center);">
+                    <a href="" style="  widht: 100%; display: var(--flex);justify-content: var(--center);">
                         <img src="CSS/DASHBOARD/ASIDE/IMG/delete.png" alt="delete" />
                     </a>
                 </div> 

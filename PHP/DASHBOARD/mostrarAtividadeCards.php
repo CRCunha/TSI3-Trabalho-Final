@@ -7,6 +7,8 @@ $sql = "SELECT * FROM post";
 		$consulta->execute();
 		while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
 			$titulo = $registro['titulo'];
+			$nome = $registro['nome_user'];
+			$avatar =  $registro['avatar'];
 			include("cardAtividadeEstruct.php");
 		}
 	}

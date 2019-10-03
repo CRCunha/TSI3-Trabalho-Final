@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="CSS/DASHBOARD/CARD/card.css" />
     <link rel="stylesheet" href="CSS/DASHBOARD/MODAL CARDS/modalCards.css" />
     <link rel="stylesheet" href="CSS/DASHBOARD/ATIVIDADE CARD/atividadeCard.css" />
+    <link rel="stylesheet" href="CSS/DASHBOARD/PERFIL/perfil.css" />
     <script type="text/JavaScript" src="JS/modalCards.js"></script>
     <!--FONTES-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -71,7 +72,7 @@
                     </a>
                 </div> 
                 <div class="btnMenu">
-                    <a href="feed.php" style="  widht: 100%; display: var(--flex);justify-content: var(--center);">
+                    <a href="" style="  widht: 100%; display: var(--flex);justify-content: var(--center);">
                         <img src="CSS/DASHBOARD/ASIDE/IMG/delete.png" alt="delete" />
                     </a>
                 </div> 
@@ -100,11 +101,16 @@
                 </div>  
             </div>
             <div class="content" id="#style-3">
-                <?php include("PHP/DASHBOARD/mostrarCards.php"); ?>
-                <!-- CARD ADD -->
-                <div class="cardAdd" onclick="abrirModalCard()">
-                    <img src="CSS/DASHBOARD/CARD/IMG/add.png">
-                </div>    
+                <!-- CONTENT PERFIL -->
+                <div class="mudarAvatarContainer">
+                    <div class="avatarContainer">
+                        <div class="avatar" style="background-image: url(<?php echo($avatar) ?>)"></div>
+                    </div>
+                    <form action="PHP/DASHBOARD/mudarAvatar.php" method="post">
+                        <input type="text" name="avatar" id="avatar" placeholder="Link">
+                        <input type="submit" name="enviarAvatar" value="Enviar">
+                    </form>
+                </div>
             </div>
         </div>
     </main>    

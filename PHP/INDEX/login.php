@@ -23,9 +23,10 @@
 		$consulta = $link->prepare($sql);
 		$consulta->execute();
 		while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
-            $nome = ($registro['nome_user']);
+            $nome_user = ($registro['nome']);
             $avatar = ($registro['avatar']);
             $id = $registro['id'];
+
 		}
 	}
 	catch(PDOException $ex){
