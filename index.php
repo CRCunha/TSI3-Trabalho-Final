@@ -25,20 +25,7 @@
 <?php 
     include("PHP/connect.php");
 
-    $email = $_SESSION['nome'];
-
-    $sql = "SELECT * FROM User where email = '$email'";
-	try {
-		$consulta = $link->prepare($sql);
-		$consulta->execute();
-		while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
-            $avatar = $registro['avatar'];
-            $_SESSION['avatar'] = $avatar;
-		}
-	}
-	catch(PDOException $ex){
-		echo($ex->getMessage());
-	}
+    
 ?>
 
 <body id="index">

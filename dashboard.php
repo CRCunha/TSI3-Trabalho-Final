@@ -71,7 +71,7 @@
                     </a>
                 </div> 
                 <div class="btnMenu">
-                    <a href="" style="  widht: 100%; display: var(--flex);justify-content: var(--center);">
+                    <a href="excluir.php" style="  widht: 100%; display: var(--flex);justify-content: var(--center);">
                         <img src="CSS/DASHBOARD/ASIDE/IMG/delete.png" alt="delete" />
                     </a>
                 </div> 

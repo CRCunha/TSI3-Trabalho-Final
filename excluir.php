@@ -100,11 +100,8 @@
                 </div>  
             </div>
             <div class="content" id="#style-3">
-                <?php include("PHP/DASHBOARD/mostrarCards.php"); ?>
-                <!-- CARD ADD -->
-                <div class="cardAdd" onclick="abrirModalCard()">
-                    <img src="CSS/DASHBOARD/CARD/IMG/add.png">
-                </div>    
+                <?php include("PHP/DASHBOARD/mostrarCardsExcluir.php"); ?>
+                
             </div>
         </div>
     </main>    
